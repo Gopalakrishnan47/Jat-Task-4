@@ -11,7 +11,7 @@ public class Task5Program6 {
         int month = input.nextInt();
         double rentPerDay = input.nextDouble();
         int days = input.nextInt();
-        float total = (float) 0.0;
+        float total = 0.0f;
         
         boolean isPeakSeason = false;
 
@@ -24,7 +24,7 @@ public class Task5Program6 {
         }
 
         if (isPeakSeason) {
-            total=(float) ((float) (rentPerDay * 0.20 ) + rentPerDay * days );
+            total=(float) ((rentPerDay * 0.20 ) + rentPerDay * days );
         }else {
          total = (float) (rentPerDay * days);
         }
