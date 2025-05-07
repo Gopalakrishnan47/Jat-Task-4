@@ -1,18 +1,18 @@
 package taskSIX;
 
 import java.util.Scanner;
-
+//program 4
 public class Account {
      double balance;
      String accountHolder;
 
     public Account() {
-        try (Scanner sc = new Scanner(System.in)) {
+        Scanner sc = new Scanner(System.in) ;
 			System.out.print("Enter account holder name: ");
 			accountHolder = sc.nextLine();
 			System.out.print("Enter initial balance: ");
 			balance = sc.nextDouble();
-		}
+		sc.close();
     }
 
     public Account(String accountHolder, double balance) {
